@@ -21,7 +21,7 @@ A linguagem C permite uma distinção clara entre a passagem por valor e por ref
 * **Passagem por Referência (`dobrar_por_referencia`):** Uma função como `void dobrar_por_referencia(int *ponteiro_para_valor)` recebe o **endereço de memória** da variável original (passado com `&` na chamada). Ao usar o operador de desreferência (`*`), a função modifica diretamente o conteúdo da variável original.
 * **Valor de Retorno (`somar`):** A função `int somar(int a, int b)` realiza uma operação e usa `return resultado;` para enviar o resultado de volta ao chamador, que pode então armazená-lo em uma variável.
 
-## 3. Demonstração em Python:
+## Demonstração em Python:
 
 Python não tem passagem por valor ou por referência no mesmo sentido explícito de C. Ele usa um modelo de **"passagem por referência de objeto"** ou "passagem por atribuição de objeto". Uma referência ao objeto é sempre passada, e o comportamento (se o original é afetado ou não) depende da **mutabilidade** do objeto.
 
