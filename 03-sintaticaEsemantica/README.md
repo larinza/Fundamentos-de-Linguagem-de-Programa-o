@@ -65,6 +65,8 @@ Os **lexemas** são as unidades sintáticas básicas de `ShopScript`, e os **tok
                       | exibir_lista_total_itens ( )
 
 ## Pequeno exemplo para análise léxica 
+
+```shopsript
 INICIO
   adicionar_item ( "Leite", 2 ) ;
   adicionar_item ( "Pão", 1 ) ;
@@ -75,6 +77,7 @@ INICIO
 FIM
  
 ## Análise Léxica 
+
 **Lexema**			**Token**
 INICIO				PALAVRA_CHAVE_INICIO
 adicionar_item			PALAVRA_CHAVE_ADICIONAR_ITEM
