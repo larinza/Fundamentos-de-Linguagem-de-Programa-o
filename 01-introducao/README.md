@@ -4,15 +4,15 @@
 
 ### Anos 1940:
 
-* **Linguagens de Máquina:** A programação inicial acontecia nesse nìvel, um programa que é executado emcódigo de máquina é o principio da arquitetura von Neumann, já que as instruções são obtidas e executadas pelo processador.
+* **Linguagens de Máquina:** A programação inicial acontecia nesse nìvel, um programa que é executado em código de máquina é o principio da arquitetura von Neumann, já que as instruções são obtidas e executadas pelo processador.
 * **Plankalkül (1945):** Era uma linguagem muito completa, incluía vetores e registros, expressões matemáticas complexas, programas que podiam ordenar vetores, testar conectividade de grafos, operações com interios e ponto flutuante, entere outros.
 
 ### Anos 1950:
 
 * **Pseudocódigos (Início dos anos 1950):** Eram ligeiramente mais sofisticadas do que o código de máquina, porém ainda muito rudimentares.
-    * **Short Code (1949):** A primeira dessas linguagens, usada no primeiro computador comercial vendido nos Estados Enidos, os códigos eram valores de pares de bytes e as quações podiam ser codificadas em uma palavra. Sua execução era mais lenda que a do código de máquina, pois possuía um interpretador puro.
+    * **Short Code (1949):** A primeira dessas linguagens, usada no primeiro computador comercial vendido nos Estados Enidos, os códigos eram valores de pares de bytes e as quações podiam ser codificadas em uma palavra. Sua execução era mais lenta que a do código de máquina, pois possuía um interpretador puro.
     * **Speedcoding (1953):** Criada para o IBM 701, trabalhava muito bem com ponto flutuante, desvios de condicionais e incondicionais e conversões de entrada e saída. Programas que seriam programados em 2 semanas em linguagem de máquina poderiam ser programados em poucas horas com Speedcoding. 
-* **FORTRAN (1957):** Desenvolvido através das capacidades do IBM 704, introdução das instruções de ponto flutuante no hardware, primeira lingugagem de alto nível compilada, tualmente, a FORTRAN ainda é uma das linguagens mais importantes para aplicações numéricas e científicas.
+* **FORTRAN (1957):** Desenvolvido através das capacidades do IBM 704, introdução das instruções de ponto flutuante no hardware, primeira linguagem de alto nível compilada, atualmente, a FORTRAN ainda é uma das linguagens mais importantes para aplicações numéricas e científicas.
 * **LISP (1958):** É a segunda linguagem de alto nível mais antiga ainda em uso, pioneira em programação funcional e inteligência artificial, sua principal estrutura de dados são as listas.
 * **COBOL (1959):** Foi a primeira linguagem de alto nível projetada para aplicações de negócios, tinha como objetivos legibilidade para não-programadores e ser independente da máquina.
 
