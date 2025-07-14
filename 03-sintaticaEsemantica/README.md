@@ -67,7 +67,7 @@ Os **lexemas** são as unidades sintáticas básicas de `ShopScript`, e os **tok
 
 ## Pequeno exemplo para análise léxica 
 
-```shopsript
+```
 INICIO
   adicionar_item ( "Leite", 2 ) ;
   adicionar_item ( "Pão", 1 ) ;
@@ -76,41 +76,43 @@ INICIO
   marcar_esgotado ( "Sabão" ) ;
   exibir_lista_total_itens ( ) ;
 FIM
- 
+```
+
 ## Análise Léxica 
 
-**Lexema**			**Token**
-INICIO				PALAVRA_CHAVE_INICIO
-adicionar_item			PALAVRA_CHAVE_ADICIONAR_ITEM
-(				DELIMITADOR_ABRE_PARENTESES
-"Leite"				LITERAL_TEXTO
-,				DELIMITADOR_VIRGULA
-2				NUMERO_INTEIRO
-)				DELIMITADOR_FECHA_PARENTESES
-;				DELIMITADOR_PONTO_E_VIRGULA
-adicionar_item			PALAVRA_CHAVE_ADICIONAR_ITEM
-(				DELIMITADOR_ABRE_PARENTESES
-"Pão"				LITERAL_TEXTO
-,				DELIMITADOR_VIRGULA
-1				NUMERO_INTEIRO
-)				DELIMITADOR_FECHA_PARENTESES
-;				DELIMITADOR_PONTO_E_VIRGULA
-exibir_lista_compras		PALAVRA_CHAVE_EXIBIR_LISTA_COMPRAS
-(				DELIMITADOR_ABRE_PARENTESES
-)				DELIMITADOR_FECHA_PARENTESES
-;				DELIMITADOR_PONTO_E_VIRGULA
-marcar_pronto			PALAVRA_CHAVE_MARCAR_PRONTO
-(				DELIMITADOR_ABRE_PARENTESES
-"Leite"				LITERAL_TEXTO
-)				DELIMITADOR_FECHA_PARENTESES
-;				DELIMITADOR_PONTO_E_VIRGULA
-marcar_esgotado			PALAVRA_CHAVE_MARCAR_ESGOTADO
-(				DELIMITADOR_ABRE_PARENTESES
-"Sabão"				LITERAL_TEXTO
-)				DELIMITADOR_FECHA_PARENTESES
-;				DELIMITADOR_PONTO_E_VIRGULA
-exibir_lista_total_itens	PALAVRA_CHAVE_EXIBIR_LISTA_TOTAL_ITENS
-(				DELIMITADOR_ABRE_PARENTESES
-)				DELIMITADOR_FECHA_PARENTESES
-;				DELIMITADOR_PONTO_E_VIRGULA
-FIM				PALAVRA_CHAVE_FIM
+| Lexema                    | Token                              |
+| :------------------------ | :--------------------------------- |
+| `INICIO`                  | `PALAVRA_CHAVE_INICIO`             |
+| `adicionar_item`          | `PALAVRA_CHAVE_ADICIONAR_ITEM`     |
+| `(`                       | `DELIMITADOR_ABRE_PARENTESES`      |
+| `"Leite"`                 | `LITERAL_TEXTO`                    |
+| `,`                       | `DELIMITADOR_VIRGULA`              |
+| `2`                       | `NUMERO_INTEIRO`                   |
+| `)`                       | `DELIMITADOR_FECHA_PARENTESES`     |
+| `;`                       | `DELIMITADOR_PONTO_E_VIRGULA`      |
+| `adicionar_item`          | `PALAVRA_CHAVE_ADICIONAR_ITEM`     |
+| `(`                       | `DELIMITADOR_ABRE_PARENTESES`      |
+| `"Pão"`                   | `LITERAL_TEXTO`                    |
+| `,`                       | `DELIMITADOR_VIRGULA`              |
+| `1`                       | `NUMERO_INTEIRO`                   |
+| `)`                       | `DELIMITADOR_FECHA_PARENTESES`     |
+| `;`                       | `DELIMITADOR_PONTO_E_VIRGULA`      |
+| `exibir_lista_compras`    | `PALAVRA_CHAVE_EXIBIR_LISTA_COMPRAS`|
+| `(`                       | `DELIMITADOR_ABRE_PARENTESES`      |
+| `)`                       | `DELIMITADOR_FECHA_PARENTESES`     |
+| `;`                       | `DELIMITADOR_PONTO_E_VIRGULA`      |
+| `marcar_pronto`           | `PALAVRA_CHAVE_MARCAR_PRONTO`      |
+| `(`                       | `DELIMITADOR_ABRE_PARENTESES`      |
+| `"Leite"`                 | `LITERAL_TEXTO`                    |
+| `)`                       | `DELIMITADOR_FECHA_PARENTESES`     |
+| `;`                       | `DELIMITADOR_PONTO_E_VIRGULA`      |
+| `marcar_esgotado`         | `PALAVRA_CHAVE_MARCAR_ESGOTADO`    |
+| `(`                       | `DELIMITADOR_ABRE_PARENTESES`      |
+| `"Sabão"`                 | `LITERAL_TEXTO`                    |
+| `)`                       | `DELIMITADOR_FECHA_PARENTESES`     |
+| `;`                       | `DELIMITADOR_PONTO_E_VIRGULA`      |
+| `exibir_lista_total_itens`| `PALAVRA_CHAVE_EXIBIR_LISTA_TOTAL_ITENS`|
+| `(`                       | `DELIMITADOR_ABRE_PARENTESES`      |
+| `)`                       | `DELIMITADOR_FECHA_PARENTESES`     |
+| `;`                       | `DELIMITADOR_PONTO_E_VIRGULA`      |
+| `FIM`                     | `PALAVRA_CHAVE_FIM`                |
