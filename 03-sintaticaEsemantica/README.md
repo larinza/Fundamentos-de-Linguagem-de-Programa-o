@@ -63,6 +63,7 @@ Os **lexemas** são as unidades sintáticas básicas de `ShopScript`, e os **tok
 
 <comando_exibicao>  ::= exibir_lista_compras ( )
                       | exibir_lista_total_itens ( )
+```
 
 ## Pequeno exemplo para análise léxica 
 
@@ -113,7 +114,3 @@ exibir_lista_total_itens	PALAVRA_CHAVE_EXIBIR_LISTA_TOTAL_ITENS
 )				DELIMITADOR_FECHA_PARENTESES
 ;				DELIMITADOR_PONTO_E_VIRGULA
 FIM				PALAVRA_CHAVE_FIM
-
-// Definições de terminais (não expandidos em BNF, definidos na análise lexical)
-<literal_texto>     ::= "qualquer sequência de caracteres entre aspas duplas"
-<numero_inteiro>    ::= digito {digito} // onde digito = 0 | 1 | ... | 9
