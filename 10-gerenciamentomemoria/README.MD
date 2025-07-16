@@ -1,10 +1,4 @@
-# Tópico 10: Gerenciamento de Memória
-
-Este tópico aborda um aspecto fundamental das linguagens de programação: o **Gerenciamento de Memória**. Compreender como as linguagens alocam, utilizam e desalocam memória é crucial para desenvolver software eficiente e robusto, livre de erros como vazamentos de memória ou acessos inválidos.
-
-## 1. Objetivo do Desafio
-
-Pesquisar e comparar as abordagens de gerenciamento de memória em duas linguagens distintas, com foco especial no gerenciamento manual em **C** e no gerenciamento automático (Garbage Collection) em **Java**, apresentando as diferenças em um quadro comparativo.
+# 10 - Gerenciamento de Memória
 
 ## 2. Gerenciamento de Memória em C
 
@@ -23,9 +17,8 @@ Em Java, o gerenciamento de memória é em grande parte **automático**, abstrai
 * **Benefícios:** Reduz significativamente o risco de vazamentos de memória e erros de acesso, simplificando o desenvolvimento.
 * **Considerações:** Embora automático, o GC pode introduzir pausas (curtas, na maioria dos GCs modernos) na execução do programa para realizar a coleta de lixo.
 
-## 4. Quadro Comparativo: C vs. Java
+## 4. Quadro Comparativo
 
-Abaixo, um quadro comparativo que destaca as principais diferenças e características do gerenciamento de memória em C e Java. **Você precisará preencher este quadro com as informações detalhadas que pesquisar no livro ou em outras fontes.**
 
 | Característica              | C (Gerenciamento Manual: malloc/free)                                      | Java (Gerenciamento Automático: Garbage Collection)                                 |
 | :-------------------------- | :---------------------------------------------------------------------------- | :----------------------------------------------------------------------------------- |
