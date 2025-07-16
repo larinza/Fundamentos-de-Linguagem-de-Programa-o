@@ -32,6 +32,3 @@ Em Java, o gerenciamento de memória é em grande parte **automático**, abstrai
 | **Impacto na Performance (Geral)** |                                                                               |                                                                                      |
 | **Pausas na Execução** |                                                                               |                                                                                      |
 
-## 5. Conclusão
-
-A gestão de memória é uma área crítica em linguagens de programação, com abordagens que variam significativamente entre paradigmas e linguagens. A escolha entre o controle explícito de C e a automação de Java impacta diretamente a complexidade do código, a prevenção de erros e as características de desempenho do software. Compreender essas diferenças é essencial para tomar decisões de design e otimização eficazes.
