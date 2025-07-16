@@ -19,16 +19,15 @@ Em Java, o gerenciamento de memória é em grande parte **automático**, abstrai
 
 ## 4. Quadro Comparativo
 
-
-| Característica              | C (Gerenciamento Manual: malloc/free)                                      | Java (Gerenciamento Automático: Garbage Collection)                                 |
-| :-------------------------- | :---------------------------------------------------------------------------- | :----------------------------------------------------------------------------------- |
-| **Método Principal de Alocação** |                                                                               |                                                                                      |
-| **Método Principal de Desalocação** |                                                                               |                                                                                      |
-| **Responsabilidade da Alocação/Desalocação** |                                                                               |                                                                                      |
-| **Risco de Vazamentos de Memória** |                                                                               |                                                                                      |
-| **Risco de Erros de Ponteiro/Acesso** |                                                                               |                                                                                      |
-| **Controle do Programador** |                                                                               |                                                                                      |
-| **Complexidade para o Desenvolvedor** |                                                                               |                                                                                      |
-| **Impacto na Performance (Geral)** |                                                                               |                                                                                      |
-| **Pausas na Execução** |                                                                               |                                                                                      |
-
+| Característica              | C (Gerenciamento Manual)                                      | Java (Garbage Collection Automático)                                 |
+| :-------------------------- | :------------------------------------------------------------ | :------------------------------------------------------------------- |
+| **Alocação de Memória** | **Explícita e Manual:** Feita pelo programador usando funções como `malloc()`, `calloc()`, `realloc()`. | **Implícita e Automática:** Ocorre quando um novo objeto é criado (usando `new`). A JVM aloca espaço no Heap. |
+| **Desalocação de Memória** | **Explícita e Manual:** Feita pelo programador usando `free()`. É de responsabilidade total do desenvolvedor. | **Automática (Garbage Collection - GC):** A JVM identifica e libera a memória de objetos que não são mais referenciados. |
+| **Local de Alocação Comum** | **Stack** (variáveis locais, parâmetros de função) e **Heap** (memória alocada dinamicamente com `malloc`/`free`). | **Stack** (variáveis primitivas locais, referências a objetos) e **Heap** (todos os objetos). |
+| **Responsabilidade** | **Programador:** Totalmente responsável por alocar e desalocar a memória, evitando vazamentos e acessos inválidos. | **JVM (Máquina Virtual Java):** O programador não gerencia a memória diretamente. O GC lida com a limpeza. |
+| **Vazamentos de Memória** | **Alto Risco:** Comum se o programador esquecer de chamar `free()` para a memória alocada. | **Baixo Risco:** O GC minimiza vazamentos, mas pode ocorrer se objetos forem inadvertidamente mantidos em referência. |
+| **Fragmentação de Memória** | **Alto Risco:** Pode levar a fragmentação externa se blocos de memória de tamanhos variados forem alocados e liberados desordenadamente. | **Menor Risco:** Muitos GCs incluem fases de compactação para reduzir a fragmentação do Heap. |
+| **Erros Comuns** | Vazamento de memória, `dangling pointers` (ponteiros para memória já liberada), dupla liberação de memória. | `Out-of-Memory Errors` (se objetos vivos consumirem toda a memória disponível), pausas do GC (`stop-the-world`). |
+| **Controle do Programador** | **Alto:** Controle granular sobre a alocação e o layout da memória. | **Baixo:** Pouco ou nenhum controle direto sobre quando e como a memória é liberada. Ajustes são feitos via configurações da JVM. |
+| **Complexidade** | **Alta:** Requer atenção meticulosa e conhecimento profundo da memória. | **Baixa:** Simplifica o desenvolvimento, liberando o programador dessa preocupação. |
+| **Desempenho** | **Potencialmente Mais Rápido:** Sem a sobrecarga do GC, mas propenso a erros que podem degradar o desempenho. | **Geralmente Bom:** Mas pode ter pausas imprevisíveis (embora cada vez menores em GCs modernos) devido ao processo de coleta. |
