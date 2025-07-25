@@ -1,5 +1,8 @@
 # Trabalho de Fundamentos de Linguagens de Programação
 
+Maria Larissa Rodrigues do Nascimento.
+Mátricula: 554982.
+
 ## Estrutura
 
 O trabalho está organizado em tópicos, onde cada pasta corresponde a um desafio.
