@@ -5,6 +5,7 @@
 O trabalho está organizado em tópicos, onde cada pasta corresponde a um desafio.
 
 A estrutura é a seguinte:
+'''
 .
 ├── 01-introducao/
 │   ├── assets/
@@ -53,6 +54,7 @@ A estrutura é a seguinte:
 │   └── codigo.py
 └── 14-tendenciaslinguagens/
     └── README.md
+'''
     
 ## Conteúdo dos Tópicos
 
